@@ -3,9 +3,11 @@ import { motion } from "framer-motion";
 
 export const ServiceContainer = styled.div`
   display: flex;
-  background: var(--mainTheme);
+  background: var(--subGradient);
   align-items: center;
   height: 100%;
+  z-index: 100px;
+  position: relative;
 `;
 
 export const ServiceContontent = styled.div`

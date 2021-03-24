@@ -9,6 +9,7 @@ body {
   --glazeTheme: #302b63;
   --subTheme: rgb(255, 72, 0);
   --lightTheme: #f2f2f2;
+  --subGradient: linear-gradient(to right, #24243e, #0f0c29, #302b63);
   --bgGradient: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
