@@ -75,6 +75,7 @@ export const HeroSmallText = styled.h4`
 `;
 export const HeroImg = styled(motion.img)`
   height: 320px;
+  width: 50%;
   object-fit: contain;
 
   @media screen and (max-width: 1024px) {
@@ -82,6 +83,7 @@ export const HeroImg = styled(motion.img)`
   }
   @media screen and (max-width: 768px) {
     height: 280px;
+    width: 100%;
   }
   @media screen and (max-width: 540px) {
     height: 250px;
