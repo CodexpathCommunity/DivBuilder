@@ -11,6 +11,10 @@ export const HeaderContainer = styled.div`
   position: sticky;
   top: 0;
   z-index: 500;
+
+  @media screen and (max-width: 240px) {
+    height: 3rem;
+  }
 `;
 
 export const HeaderContent = styled.div`
@@ -35,6 +39,9 @@ export const HeaderText = styled.h2`
   @media screen and (max-width: 540px) {
     font-size: 25px;
   }
+  @media screen and (max-width: 240px) {
+    font-size: 20px;
+  }
 `;
 
 export const HeaderSpan = styled.span`
@@ -47,6 +54,9 @@ export const HeaderImg = styled.img`
 
   @media screen and (max-width: 540px) {
     height: 25px;
+  }
+  @media screen and (max-width: 240px) {
+    font-size: 20px;
   }
 `;
 export const HeaderLinkContainer = styled.ul`
@@ -101,5 +111,8 @@ export const HeaderIcon = styled(FaBars)`
 
   @media screen and (max-width: 540px) {
     display: block;
+  }
+  @media screen and (max-width: 240px) {
+    font-size: 20px;
   }
 `;

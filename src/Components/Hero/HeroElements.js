@@ -3,25 +3,12 @@ import { Button } from "@material-ui/core";
 import { motion } from "framer-motion";
 
 export const HeroContainer = styled.div`
-  height: 70vh;
+  height: 100%;
   position: relative;
   background: url("./images/heroBg.svg") no-repeat center center/cover;
   background: #0f0c29; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-
-  @media screen and (max-width: 1024px) {
-    height: 40vh;
-  }
-  @media screen and (max-width: 768px) {
-    height: 60vh;
-  }
-  @media screen and (max-width: 540px) {
-    height: 80vh;
-  }
-  @media screen and (max-width: 320px) {
-    height: 90vh;
-  }
 `;
 
 export const HeroContent = styled.div`
@@ -31,7 +18,7 @@ export const HeroContent = styled.div`
   width: 90%;
   margin: 0 auto;
   align-items: center;
-  height: 100%;
+  padding: 40px 0;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -65,6 +52,9 @@ export const HeroBigText = styled.h2`
   @media screen and (max-width: 320px) {
     font-size: 26px;
   }
+  @media screen and (max-width: 240px) {
+    font-size: 22px;
+  }
 `;
 export const HeroSmallText = styled.h4`
   font-size: 20px;
@@ -79,6 +69,9 @@ export const HeroSmallText = styled.h4`
   @media screen and (max-width: 320px) {
     font-size: 16px;
   }
+  @media screen and (max-width: 240px) {
+    font-size: 14px;
+  }
 `;
 export const HeroImg = styled(motion.img)`
   height: 320px;
@@ -92,6 +85,7 @@ export const HeroImg = styled(motion.img)`
   }
   @media screen and (max-width: 540px) {
     height: 250px;
+    margin-top: 15px;
   }
   @media screen and (max-width: 414px) {
     height: 200px;
@@ -104,6 +98,9 @@ export const HeroImg = styled(motion.img)`
   }
   @media screen and (max-width: 320px) {
     height: 150px;
+  }
+  @media screen and (max-width: 240px) {
+    height: 110px;
   }
 `;
 

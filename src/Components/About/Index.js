@@ -39,7 +39,10 @@ function About() {
               <IconText>Figma UI design</IconText>
             </IconContent>
             <IconContent>
-              <ReactIcon />
+              <ReactIcon
+                animate={{ rotate: 360 }}
+                transition={{ duration: 1.5 }}
+              />
               <IconText>React.js Codebase</IconText>
             </IconContent>
             <IconContent>
