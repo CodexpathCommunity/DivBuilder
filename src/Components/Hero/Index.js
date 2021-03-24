@@ -32,7 +32,7 @@ function Hero() {
             transition={{ delay: 0.1, type: "spring", stiffness: 180 }}
             initial={{ y: 200 }}
             animate={{ y: 0 }}
-            src="./images/webspace.png"
+            src="./images/Team work_Two Color.svg"
           />
         </HeroContent>
       </HeroContainer>
