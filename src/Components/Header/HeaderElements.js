@@ -63,14 +63,14 @@ export const HeaderLinkContainer = styled.ul`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 640px) {
     display: block;
     position: absolute;
     top: 3.6rem;
     left: 0;
     background: var(--lightTheme);
     width: 50%;
-    height: 50vh;
+    height: 90vh;
     border-right: #ccc 1px solid;
     opacity: 0.9;
     padding: 30px;
@@ -89,7 +89,7 @@ export const HeaderLinkContent = styled.li`
   font-weight: 200;
   cursor: pointer;
 
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 640px) {
     color: var(--mainTheme);
     margin: 0 0 25px 0;
     font-size: 25px;
@@ -109,7 +109,7 @@ export const HeaderIcon = styled(FaBars)`
   cursor: pointer;
   display: none;
 
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 640px) {
     display: block;
   }
   @media screen and (max-width: 240px) {

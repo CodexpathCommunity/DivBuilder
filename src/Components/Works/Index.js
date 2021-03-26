@@ -1,4 +1,5 @@
 import React from "react";
+import WorkingCard from "./WorkingCard";
 import {
   BolbBtm,
   BolbTop,
@@ -12,30 +13,16 @@ function Works() {
   return (
     <>
       <WorkingContainer>
-        <BolbTop src="./images/blob_6-2-20.svg" />
         <WorkingContent>
           <WorkingCardContainer>
-            <WorkingCardContent>
-              <h2>this is the works section</h2>
-            </WorkingCardContent>
-            <WorkingCardContent>
-              <h2>this is the works section</h2>
-            </WorkingCardContent>
-            <WorkingCardContent>
-              <h2>this is the works section</h2>
-            </WorkingCardContent>
-            <WorkingCardContent>
-              <h2>this is the works section</h2>
-            </WorkingCardContent>
-            <WorkingCardContent>
-              <h2>this is the works section</h2>
-            </WorkingCardContent>
-            <WorkingCardContent>
-              <h2>this is the works section</h2>
-            </WorkingCardContent>
+            <WorkingCard />
+            <WorkingCard />
+            <WorkingCard />
+            <WorkingCard />
+            <WorkingCard />
+            <WorkingCard />
           </WorkingCardContainer>
         </WorkingContent>
-        <BolbBtm src="./images/blob_6-2-9.svg" />
       </WorkingContainer>
     </>
   );
