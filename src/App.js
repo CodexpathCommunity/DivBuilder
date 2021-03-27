@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import About from "./Components/About/Index";
+import Contact from "./Components/Contact/Index";
 import Developer from "./Components/Developer/Index";
 import Header from "./Components/Header/Index";
 import Hero from "./Components/Hero/Index";
@@ -19,6 +20,7 @@ function App() {
         <Works />
         <Pricing />
         <Developer />
+        <Contact />
       </section>
     </>
   );
