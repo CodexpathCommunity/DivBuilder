@@ -10,7 +10,15 @@ import {
   DeveloperTextContainer,
   DevImgContainer,
   DevImg,
+  DevIconContainer,
+  PageLink,
 } from "./DeveloperElements";
+import { AiFillFacebook } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillYoutube } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaGithubSquare } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
 
 function Developer() {
   return (
@@ -29,7 +37,29 @@ function Developer() {
           </DevSub>
           <DevBtn>Download CV</DevBtn>
         </DeveloperTextContainer>
-        <DevImg src="./images/designer.jpg" />
+        <DevImgContainer>
+          <DevImg src="./images/designer.jpg" />
+          <DevIconContainer>
+            <PageLink href="https://www.linkedin.com/in/emmanuel-jacob-661a451bb/">
+              <AiFillLinkedin />
+            </PageLink>
+            <PageLink href="https://github.com/CodexpathCommunity">
+              <FaGithubSquare />
+            </PageLink>
+            <PageLink href="https://twitter.com/codexpath2">
+              <FaTwitterSquare />
+            </PageLink>
+            <PageLink href="https://www.facebook.com/skyboy.ema">
+              <AiFillFacebook />
+            </PageLink>
+            <PageLink href="https://www.instagram.com/skyboycode/">
+              <AiFillInstagram />
+            </PageLink>
+            <PageLink href="https://www.youtube.com/channel/UCWNk7hxPmAg1u251-hTdunA/">
+              <AiFillYoutube />
+            </PageLink>
+          </DevIconContainer>
+        </DevImgContainer>
       </DeveloperContent>
     </DeveloperContainer>
   );

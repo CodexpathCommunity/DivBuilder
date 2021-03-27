@@ -70,12 +70,28 @@ export const DevBtn = styled(Button)`
     color: var(--subTheme) !important;
   }
 `;
+export const DevImgContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+`;
 export const DevImg = styled.img`
-  height: 250px;
+  height: 220px;
   width: 250px;
 
   @media screen and (max-width:600px){{
       width:70%;
-      margin:0 auto;
   }
+`;
+export const DevIconContainer = styled.div`
+  display: grid;
+  color: var(--mainTheme);
+  font-size: 30px;
+`;
+export const PageLink = styled.a`
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
 `;
