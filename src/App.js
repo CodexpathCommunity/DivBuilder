@@ -3,6 +3,7 @@ import About from "./Components/About/Index";
 import Developer from "./Components/Developer/Index";
 import Header from "./Components/Header/Index";
 import Hero from "./Components/Hero/Index";
+import Pricing from "./Components/Pricing/Index";
 import Services from "./Components/Services/Index";
 import Works from "./Components/Works/Index";
 
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Services />
         <Works />
+        <Pricing />
         <Developer />
       </section>
     </>

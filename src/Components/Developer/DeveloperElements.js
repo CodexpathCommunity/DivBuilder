@@ -5,10 +5,9 @@ export const DeveloperContainer = styled.div`
   display: flex;
   height: 100%;
   position: relative;
-  z-index: 50px;
   border-radius: 0px;
-  background: #b8aec6;
-  box-shadow: inset 30px 30px 61px #b6acc4, inset -30px -30px 61px #bab0c8;
+  background: linear-gradient(145deg, #bfbac8, #e3ddee);
+  box-shadow: 5px 5px 100px #b4b0bd, -5px -5px 100px #f4eeff;
 `;
 export const DeveloperContent = styled.div`
  display:flex;
@@ -19,10 +18,7 @@ export const DeveloperContent = styled.div`
  padding:10px 5px;
  box-sizing:border-box;
  justify-content:space-evenly;
- border-radius: 0px;
-background: #ededed;
-box-shadow:  9px 9px 31px #c9c9c9,
-             -9px -9px 31px #ffffff;
+
 
 @media screen and (max-width:600px){
     flex-direction:column;

@@ -1,16 +1,30 @@
 import React from "react";
-import { PricingCardContent } from "./PricingElements";
+import {
+  PricingCardContent,
+  PricingDesc,
+  PricingHeading,
+  PricingPlan,
+  ProductDescContainer,
+  ProductDescContent,
+  CheckIcon,
+  PriceText,
+} from "./PricingElements";
 
-const PricingCard = () => {
+const PricingCard = ({ heading, subHeading, price, description }) => {
   return (
     <>
       <PricingCardContent>
-        <PricingHeading>Basic</PricingHeading>
-        <PricingPlan>Get the least best plan</PricingPlan>
-        <pricingDesc></pricingDesc>
-        <pricingDesc></pricingDesc>
-        <pricingDesc></pricingDesc>
-        <pricingDesc></pricingDesc>
+        <PricingHeading> {heading} </PricingHeading>
+        <PricingPlan> {subHeading} </PricingPlan>
+        <ProductDescContainer>
+          {description.map(({ offer }) => (
+            <ProductDescContent>
+              <CheckIcon />
+              <PricingDesc> {offer} </PricingDesc>
+            </ProductDescContent>
+          ))}
+        </ProductDescContainer>
+        <PriceText> {price} </PriceText>
       </PricingCardContent>
     </>
   );
