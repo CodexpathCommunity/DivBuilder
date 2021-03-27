@@ -1,5 +1,4 @@
 import { Button } from "@material-ui/core";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const WorkingContainer = styled.div`
@@ -11,22 +10,6 @@ export const WorkingContainer = styled.div`
   background: #b8aec6;
   box-shadow: inset 30px 30px 61px #b6acc4, inset -30px -30px 61px #bab0c8;
   background: url("./images/polygon-scatter-haikei (1).svg") center center/cover;
-`;
-export const BolbTop = styled.img`
-  height: 700px;
-  position: absolute;
-  left: -300px;
-  top: -200px;
-  object-fit: contain;
-  z-index: -10px;
-`;
-export const BolbBtm = styled.img`
-  height: 500px;
-  position: absolute;
-  right: -200px;
-  bottom: -200px;
-  object-fit: contain;
-  z-index: -10px;
 `;
 export const WorkingContent = styled.div`
   display: grid;
@@ -52,6 +35,14 @@ export const WorkingCardContainer = styled.div`
   @media screen and (max-width: 600px) {
     grid-template-columns: 1fr;
   }
+`;
+export const WorkHeadText = styled.h2`
+  font-size: 25px;
+  padding-bottom: 5px;
+  border-bottom: 4px solid var(--mainTheme);
+  width: 100%;
+  margin-bottom: 10px;
+  color: var(--mainTheme);
 `;
 export const WorkingCardContent = styled.div`
   display: flex;

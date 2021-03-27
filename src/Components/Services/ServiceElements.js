@@ -60,7 +60,7 @@ export const ServiceHeading = styled.h2`
   border-bottom: 3px solid var(--glazeTheme);
 `;
 export const CardHeading = styled.h2`
-  font-size: 20px;
+  font-size: 25px;
   padding-bottom: 5px;
   border-bottom: 4px solid var(--mainTheme);
   width: 100%;

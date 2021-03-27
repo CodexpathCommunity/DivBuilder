@@ -3,10 +3,10 @@ import WorkingCard from "./WorkingCard";
 import {
   BolbBtm,
   BolbTop,
-  WorkingCardContent,
   WorkingContainer,
   WorkingContent,
   WorkingCardContainer,
+  WorkHeadText,
 } from "./WorkingElement";
 
 function Works() {
@@ -14,6 +14,7 @@ function Works() {
     <>
       <WorkingContainer>
         <WorkingContent>
+          <WorkHeadText>Our Projects</WorkHeadText>
           <WorkingCardContainer>
             <WorkingCard />
             <WorkingCard />
