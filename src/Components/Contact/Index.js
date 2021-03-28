@@ -4,7 +4,6 @@ import {
   ContactFormContainer,
   ContactDetailContainer,
   ContactHeading,
-  GridGap,
   ContactForm,
   InputContainer,
   InputText,
@@ -28,8 +27,8 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "gmail",
-        "service_kk1fqyg",
+        "service_wbmuqan",
+        "template_i999p2y",
         e.target,
         "user_W7s5J5ipgDjWdY4yR0NLs"
       )
@@ -41,7 +40,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    e.targer.reset();
+    e.target.reset();
   };
   return (
     <>
@@ -49,30 +48,37 @@ const Contact = () => {
         <ContactFormContainer>
           <ContactHeading form>Leave a message!</ContactHeading>
           <ContactForm onSubmit={sendEmail}>
-            <GridGap>
-              <InputContainer grid>
-                <InputText>Your Name:</InputText>
-                <InputField type="text" />
-              </InputContainer>
-              <InputContainer grid>
-                <InputText>Email:</InputText>
-                <InputField type="email" />
-              </InputContainer>
-            </GridGap>
+            <InputContainer>
+              <InputText>Your Name:</InputText>
+              <InputField
+                type="text"
+                placeholder="John Wick"
+                name="from_name"
+              />
+            </InputContainer>
+            <InputContainer>
+              <InputText>Email:</InputText>
+              <InputField
+                type="email"
+                placeholder="Johnwick@gmail.com"
+                name="from_email"
+              />
+            </InputContainer>
             <InputContainer>
               <InputText>Subject:</InputText>
-              <InputField type="text" />
+              <InputField type="text" placeholder="subject" name="subject" />
             </InputContainer>
             <InputContainer end>
               <InputText>Your Message:</InputText>
               <MessageField
+                placeholder="leave your message here"
                 name="message"
                 id=""
                 cols="10"
                 rows="10"
               ></MessageField>
             </InputContainer>
-            <SubmitBtn>Submit</SubmitBtn>
+            <SubmitBtn type="submit">Submit</SubmitBtn>
           </ContactForm>
         </ContactFormContainer>
         <ContactDetailContainer>
