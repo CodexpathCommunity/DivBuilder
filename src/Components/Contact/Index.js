@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  ContactContainer,
   ContactContent,
   ContactFormContainer,
   ContactDetailContainer,
@@ -69,7 +68,7 @@ const Contact = () => {
               <MessageField
                 name="message"
                 id=""
-                cols="30"
+                cols="10"
                 rows="10"
               ></MessageField>
             </InputContainer>

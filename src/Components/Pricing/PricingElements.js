@@ -1,16 +1,6 @@
 import styled from "styled-components";
 import { BiCheck } from "react-icons/bi";
 
-export const PricingContainer = styled.div`
-  display: flex;
-  height: 100%;
-  position: relative;
-  z-index: 50px;
-  border-radius: 0px;
-  background: #b8aec6;
-  box-shadow: inset 30px 30px 61px #b6acc4, inset -30px -30px 61px #bab0c8;
-`;
-
 export const PricingContent = styled.div`
   display: grid;
   grid-gap: 15px;
@@ -31,6 +21,9 @@ export const PricingCardContainer = styled.div`
   margin: 0 auto;
   z-index: 100px;
 
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
   @media screen and (max-width: 800px) {
     grid-template-columns: repeat(2, 1fr);
   }

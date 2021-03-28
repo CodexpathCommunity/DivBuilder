@@ -1,7 +1,6 @@
 import React from "react";
 import PricingCard from "./PricingCard";
 import {
-  PricingContainer,
   PricingContent,
   PricingHeadText,
   PricingCardContainer,

@@ -4,14 +4,6 @@ import { MdLocationOn } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-export const ContactContainer = styled.div`
-  display: flex;
-  height: 100%;
-  position: relative;
-  border-radius: 0px;
-  background: linear-gradient(145deg, #bfbac8, #e3ddee);
-  box-shadow: 5px 5px 100px #b4b0bd, -5px -5px 100px #f4eeff;
-`;
 export const ContactContent = styled.div`
   display:flex;
  align-items:center
@@ -22,6 +14,10 @@ export const ContactContent = styled.div`
  box-sizing:border-box;
  justify-content:space-between;
  color:var(--mainTheme);
+
+ @media screen and (max-width:1024px){
+   flex-direction:column;
+ }
 `;
 export const ContactFormContainer = styled.div`
   display: flex;
@@ -36,19 +32,19 @@ export const ContactForm = styled.form`
   display: grid;
   grid-gap: 15px;
   width: 95%;
-  margin: auto;
+  margin: 5px auto;
 `;
 export const GridGap = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-gap: 10px;
   width: 96%;
   margin: 0 auto;
 `;
 export const InputContainer = styled.div`
   padding: 5px;
+  box-sizing: border-box;
   border: 1px solid var(--mainTheme);
-  width: ${({ grid }) => (grid ? "47%" : "95%")};
+  width: ${({ grid }) => (grid ? "100%" : "95%")};
   display: flex;
   align-items: ${({ end }) => (end ? "flex-start" : "center")};
   margin: ${({ grid }) => (grid ? "none" : "0 auto")};
@@ -79,15 +75,17 @@ export const MessageField = styled.textarea`
   padding: 0 10px;
   box-sizing: border-box;
   font-size: 12px;
-  height: 30px
-      border-style: none; 
-    border-color: Transparent; 
-    overflow: auto; 
+  height: 150px;
+  overflow: auto;
+  resize: none;
 
   &:focus {
-      border: 0 none #FFF;
+    border: 0 none #fff;
     overflow: hidden;
-    outline:none;
+    outline: none;
+  }
+  @media screen and (max-width: 320) {
+    height: 30px;
   }
 `;
 export const ContactDetailContainer = styled.div`

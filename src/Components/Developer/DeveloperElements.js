@@ -2,19 +2,17 @@ import { Button } from "@material-ui/core";
 import styled from "styled-components";
 
 export const DeveloperContent = styled.div`
- display:flex;
- align-items:center
- max-width:1200px;
- width:90%;
- margin:0 auto;
- padding:15px 5px;
- justify-content:space-between;
+  display: flex;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px 5px;
+  justify-content: space-between;
 
-
-@media screen and (max-width:600px){
-    flex-direction:column;
-    align-items:center;
-}
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 export const DeveloperTextContainer = styled.div`
   display: flex;
@@ -23,6 +21,14 @@ export const DeveloperTextContainer = styled.div`
   padding: 20px;
   box-sizing: border-box;
   color: var(--mainTheme);
+  width: 60%;
+
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 640px) {
+    width: 90%;
+  }
 `;
 export const DevSub = styled.h4`
   font-size: 16px;
@@ -59,16 +65,28 @@ export const DevBtn = styled(Button)`
 `;
 export const DevImgContainer = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
   width: 30%;
+
+  @media screen and (max-width: 1024px) {
+    width: 40%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 640px) {
+    width: 90%;
+  }
 `;
 export const DevImg = styled.img`
   height: 220px;
   width: 250px;
+  margin-top:10px;
+  
 
   @media screen and (max-width:600px){{
       width:70%;
+      margin:0;
   }
 `;
 export const DevIconContainer = styled.div`
