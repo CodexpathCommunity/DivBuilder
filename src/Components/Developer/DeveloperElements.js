@@ -1,23 +1,14 @@
 import { Button } from "@material-ui/core";
 import styled from "styled-components";
 
-export const DeveloperContainer = styled.div`
-  display: flex;
-  height: 100%;
-  position: relative;
-  border-radius: 0px;
-  background: linear-gradient(145deg, #bfbac8, #e3ddee);
-  box-shadow: 5px 5px 100px #b4b0bd, -5px -5px 100px #f4eeff;
-`;
 export const DeveloperContent = styled.div`
  display:flex;
  align-items:center
  max-width:1200px;
  width:90%;
  margin:0 auto;
- padding:10px 5px;
- box-sizing:border-box;
- justify-content:space-evenly;
+ padding:15px 5px;
+ justify-content:space-between;
 
 
 @media screen and (max-width:600px){
@@ -70,6 +61,7 @@ export const DevImgContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  width: 30%;
 `;
 export const DevImg = styled.img`
   height: 220px;

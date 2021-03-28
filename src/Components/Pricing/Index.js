@@ -119,21 +119,19 @@ function Pricing() {
 
   return (
     <>
-      <PricingContainer>
-        <PricingContent>
-          <PricingHeadText>Pricing</PricingHeadText>
-          <PricingCardContainer>
-            {pricingData.map(({ heading, subHeading, price, description }) => (
-              <PricingCard
-                heading={heading}
-                subHeading={subHeading}
-                price={price}
-                description={description}
-              />
-            ))}
-          </PricingCardContainer>
-        </PricingContent>
-      </PricingContainer>
+      <PricingContent>
+        <PricingHeadText>Pricing</PricingHeadText>
+        <PricingCardContainer>
+          {pricingData.map(({ heading, subHeading, price, description }) => (
+            <PricingCard
+              heading={heading}
+              subHeading={subHeading}
+              price={price}
+              description={description}
+            />
+          ))}
+        </PricingCardContainer>
+      </PricingContent>
     </>
   );
 }

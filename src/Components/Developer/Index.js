@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  DeveloperContainer,
   DeveloperContent,
   DevSub,
   DevBtn,
@@ -22,13 +21,14 @@ import { FaTwitterSquare } from "react-icons/fa";
 
 function Developer() {
   return (
-    <DeveloperContainer>
+    <>
       <DeveloperContent>
         <DeveloperTextContainer>
           <DevSub>Meet our lead developer</DevSub>
           <DevH2>Hi 👋, I'm Emmanuel Jacob.</DevH2>
           <DevText>
-            I'm great at frontend With React, Redux and Firebase backend.
+            I'm great at frontend With React, CSS, Redux, <br /> GIT, Firebase
+            backend and a hand full of useful technologies.
             <br />I can contribute to building your brand with my skills.
           </DevText>
           <DevSub last>
@@ -61,7 +61,7 @@ function Developer() {
           </DevIconContainer>
         </DevImgContainer>
       </DeveloperContent>
-    </DeveloperContainer>
+    </>
   );
 }
 
