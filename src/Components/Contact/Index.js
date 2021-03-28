@@ -12,6 +12,14 @@ import {
   InputField,
   MessageField,
   SubmitBtn,
+  LocationIcon,
+  ContactTextDetailContainer,
+  ContactDetailFlex,
+  DetailedTextContainer,
+  DetailHeading,
+  DetailText,
+  PhoneIcon,
+  EmailIcon,
 } from "./ContactElemets";
 import emailjs from "emailjs-com";
 
@@ -71,7 +79,33 @@ const Contact = () => {
           </ContactFormContainer>
           <ContactDetailContainer>
             <ContactHeading>Contact Info.</ContactHeading>
-            <h2>this is the contact form</h2>
+            <InputText>
+              Feel free to contact us for career prospect, business services and
+              other professional inquiries
+            </InputText>
+            <ContactTextDetailContainer>
+              <ContactDetailFlex>
+                <LocationIcon />
+                <DetailedTextContainer>
+                  <DetailHeading>Location</DetailHeading>
+                  <DetailText>Enugu, NG.</DetailText>
+                </DetailedTextContainer>
+              </ContactDetailFlex>
+              <ContactDetailFlex>
+                <PhoneIcon />
+                <DetailedTextContainer>
+                  <DetailHeading>Phone</DetailHeading>
+                  <DetailText>+2347015688584</DetailText>
+                </DetailedTextContainer>
+              </ContactDetailFlex>
+              <ContactDetailFlex>
+                <EmailIcon />
+                <DetailedTextContainer>
+                  <DetailHeading>Email</DetailHeading>
+                  <DetailText>codexpath3@gmail.com</DetailText>
+                </DetailedTextContainer>
+              </ContactDetailFlex>
+            </ContactTextDetailContainer>
           </ContactDetailContainer>
         </ContactContent>
       </ContactContainer>

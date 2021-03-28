@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { Button } from "@material-ui/core";
+import { MdLocationOn } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export const ContactContainer = styled.div`
   display: flex;
@@ -54,6 +57,7 @@ export const InputText = styled.h4`
   font-size: 14px;
   font-weight: 200;
   margin-right: 5px;
+  line-height: 1.2;
 `;
 export const InputField = styled.input`
   flex: 1;
@@ -91,13 +95,60 @@ export const ContactDetailContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   flex: 0.4;
-  padding: 5px;
+  padding: 15px;
   box-sizing: border-box;
 `;
 export const ContactHeading = styled.h2`
   font-size: 25px;
   font-weight: 600;
-  margin-bottom: ${({ form }) => (form ? "15px" : "10px")};
+  margin-bottom: ${({ form }) => (form ? "20px" : "10px")};
+`;
+
+export const ContactTextDetailContainer = styled.div`
+  display: grid;
+  grid-gap: 15px;
+  margin-top: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+`;
+export const ContactDetailFlex = styled.div`
+  display: flex;
+  align-items: center;
+`;
+export const DetailedTextContainer = styled.div`
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+`;
+export const DetailHeading = styled.h3`
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+`;
+export const DetailText = styled.h5`
+  font-size: 14px;
+  font-weight: 100;
+`;
+export const LocationIcon = styled(MdLocationOn)`
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid var(--mainTheme);
+  color: var(--mainTheme);
+  border-radius: 999px;
+`;
+export const PhoneIcon = styled(FaPhoneAlt)`
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid var(--mainTheme);
+  color: var(--mainTheme);
+  border-radius: 999px;
+`;
+export const EmailIcon = styled(MdEmail)`
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid var(--mainTheme);
+  color: var(--mainTheme);
+  border-radius: 999px;
 `;
 export const SubmitBtn = styled(Button)`
   text-transform: inherit !important;
