@@ -12,7 +12,7 @@ import {
 function Hero() {
   return (
     <>
-      <HeroContainer>
+      <HeroContainer id="home">
         <HeroContent>
           <HeroTextContainer
             initial={{ opacity: 0 }}

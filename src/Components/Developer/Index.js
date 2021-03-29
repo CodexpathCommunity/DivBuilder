@@ -35,7 +35,9 @@ function Developer() {
             Hire me from <SubSpan>$40/hr</SubSpan> and I promise you
             productivity.
           </DevSub>
-          <DevBtn>Download CV</DevBtn>
+          <PageLink href="./images/Emmanuel__Jacob.pdf" download>
+            <DevBtn>Download CV</DevBtn>
+          </PageLink>
         </DeveloperTextContainer>
         <DevImgContainer>
           <DevImg src="./images/designer.jpg" />

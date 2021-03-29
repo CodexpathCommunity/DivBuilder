@@ -10,18 +10,15 @@ import {
   PageLink,
 } from "./WorkingElement";
 
-function WorkingCard() {
+function WorkingCard({ src, type, heading, desc, link, download }) {
   return (
     <WorkingCardContent>
-      <WorkImg src="./images/amazonChallange.png" />
+      <WorkImg src={src} />
       <WorkTextContainer>
-        <WorkType>Web Application</WorkType>
-        <WorkHeading>Amazon website model</WorkHeading>
-        <WorkDesc>
-          Fullstack e-commerce application inspired by amazon with best
-          fuctionalities.
-        </WorkDesc>
-        <PageLink href="https://www.amazon.com/">
+        <WorkType>{type}</WorkType>
+        <WorkHeading>{heading}</WorkHeading>
+        <WorkDesc>{desc}</WorkDesc>
+        <PageLink href={link} download={download}>
           <WorkingBtn>View</WorkingBtn>
         </PageLink>
       </WorkTextContainer>

@@ -44,7 +44,7 @@ const Contact = () => {
   };
   return (
     <>
-      <ContactContent>
+      <ContactContent id="contact">
         <ContactFormContainer>
           <ContactHeading form>Leave a message!</ContactHeading>
           <ContactForm onSubmit={sendEmail}>
@@ -85,7 +85,7 @@ const Contact = () => {
           <ContactHeading>Contact Info.</ContactHeading>
           <InputText>
             Feel free to contact us for career prospect, business services and
-            other professional inquiries
+            other professional inquiries.
           </InputText>
           <ContactTextDetailContainer>
             <ContactDetailFlex>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
+import { Link as LinkS } from "react-scroll";
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -101,6 +102,19 @@ export const HeaderLinkContent = styled.li`
 
   &:hover {
     border-bottom: 1px solid var(--subTheme);
+  }
+`;
+export const NavLinks = styled(LinkS)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+
+  &.active {
+    border-bottom: 3px solid var(--subTheme);
   }
 `;
 export const HeaderIcon = styled(FaBars)`

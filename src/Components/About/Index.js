@@ -21,7 +21,7 @@ import {
 function About() {
   return (
     <>
-      <AboutContainer>
+      <AboutContainer id="packages">
         <AboutContent>
           <TextContainer>
             <HeadingText>Packages</HeadingText>

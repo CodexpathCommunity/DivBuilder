@@ -14,103 +14,106 @@ function Pricing() {
       price: "$350",
       description: [
         {
-          offer: "singlepage application",
+          offer: "Single page portfolio website",
         },
         {
-          offer: "singlepage application",
+          offer: "Source code",
         },
         {
-          offer: "singlepage application",
+          offer: "Figma design",
         },
         {
-          offer: "singlepage application",
+          offer: "Available in 4 days.",
+        },
+        {
+          offer: "Hosting and domain",
         },
       ],
     },
     {
       heading: "Premium",
-      subHeading: "Get the least best offer",
-      price: "$350",
+      subHeading: "Get our premuim offer",
+      price: "$550",
       description: [
         {
-          offer: "singlepage application",
+          offer: "3 - 5 page blog website",
         },
         {
-          offer: "singlepage application",
+          offer: "Figma designs",
         },
         {
-          offer: "singlepage application",
+          offer: "Source code",
         },
         {
-          offer: "singlepage application",
+          offer: "Available in one week",
         },
         {
-          offer: "singlepage application",
+          offer: "2 rewiews",
         },
         {
-          offer: "singlepage application",
+          offer: "Hosting and domain",
         },
       ],
     },
     {
       heading: "Advanced",
-      subHeading: "Get the least best offer",
-      price: "$350",
+      subHeading: "Get advanced offers and step your business up ",
+      price: "$750",
       description: [
         {
-          offer: "singlepage application",
+          offer: "5+ page blogs ",
         },
         {
-          offer: "singlepage application",
+          offer: "Web applicaion",
         },
         {
-          offer: "singlepage application",
+          offer: "Database",
         },
         {
-          offer: "singlepage application",
+          offer: "Postings and downloads",
         },
         {
-          offer: "singlepage application",
+          offer: "Authentications",
         },
         {
-          offer: "singlepage application",
+          offer: "Available in Two weeks ",
         },
         {
-          offer: "singlepage application",
+          offer: "Hosting and domains",
         },
       ],
     },
     {
       heading: "Platinium",
       subHeading: "Get a wide range of services in one package",
-      price: "$350",
+      price: "$1200 ++",
       description: [
         {
-          offer: "singlepage application",
+          offer: "E-commerce shop",
         },
         {
-          offer: "singlepage application",
+          offer: "Payments",
         },
         {
-          offer: "singlepage application",
+          offer: "Admin dashboard",
         },
         {
-          offer: "singlepage application",
+          offer: "Database and store",
         },
         {
-          offer: "singlepage application",
+          offer: "User authentications",
         },
         {
-          offer: "singlepage application",
+          offer: "Protected Routes",
         },
         {
-          offer: "singlepage application",
+          offer: "Unlimited Reviews",
         },
         {
-          offer: "singlepage application",
+          offer: "Available in 3 - 4 weeks",
         },
         {
-          offer: "singlepage application",
+          offer: "Hostings and domains",
         },
       ],
     },
@@ -118,7 +121,7 @@ function Pricing() {
 
   return (
     <>
-      <PricingContent>
+      <PricingContent id="pricing">
         <PricingHeadText>Pricing</PricingHeadText>
         <PricingCardContainer>
           {pricingData.map(({ heading, subHeading, price, description }) => (
