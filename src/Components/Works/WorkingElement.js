@@ -71,18 +71,18 @@ export const WorkTextContainer = styled.div`
   color: var(--mainTheme);
 `;
 export const WorkType = styled.h4`
-  font-size: 12px;
-  font-weight: 10;
+  font-size: 14px;
+  font-weight: 200;
   margin-bottom: 5px;
 `;
 export const WorkHeading = styled.h2`
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 800;
   margin-bottom: 5px;
 `;
 export const WorkDesc = styled.p`
-  font-size: 15px;
-  font-weight: 100;
+  font-size: 16px;
+  font-weight: 400;
   margin-bottom: 8px;
 `;
 export const WorkingBtn = styled(Button)`

@@ -74,7 +74,7 @@ export const FeatureBigText = styled.h2`
 `;
 export const FeatureSmallText = styled.p`
   font-size: 18px;
-  font-weight: 25;
+  font-weight: 300;
   color: var(--mainTheme);
   line-height: 1.5;
 

@@ -84,8 +84,8 @@ export const ProductDescContent = styled.div`
   align-items: center;
 `;
 export const PricingDesc = styled.p`
-  font-size: 14px;
-  font-weight: 200;
+  font-size: 16px;
+  font-weight: 600;
 `;
 export const CheckIcon = styled(BiCheck)`
   font-size: 20px;

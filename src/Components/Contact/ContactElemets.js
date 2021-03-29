@@ -50,8 +50,8 @@ export const InputContainer = styled.div`
   margin: ${({ grid }) => (grid ? "none" : "0 auto")};
 `;
 export const InputText = styled.h4`
-  font-size: 14px;
-  font-weight: 200;
+  font-size: 16px;
+  font-weight: 400;
   margin-right: 5px;
   line-height: 1.2;
 `;
@@ -119,13 +119,13 @@ export const DetailedTextContainer = styled.div`
   flex-direction: column;
 `;
 export const DetailHeading = styled.h3`
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 800;
   margin-bottom: 5px;
 `;
 export const DetailText = styled.h5`
-  font-size: 14px;
-  font-weight: 100;
+  font-size: 16px;
+  font-weight: 400;
 `;
 export const LocationIcon = styled(MdLocationOn)`
   font-size: 18px;
